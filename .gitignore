@@ -3,3 +3,4 @@ secret.env
 *.ipynb
 /.ipynb_checkpoints
 /data
+secret.sh
