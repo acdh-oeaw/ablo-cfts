@@ -1,11 +1,11 @@
-name: Build and publish
+name: Download and Build Index
 
 on:
   workflow_dispatch
 
 jobs:
   build_pages:
-    name: Publish Edition as GitHub Pages Website
+    name: Download and Build Index
     runs-on: ubuntu-latest
     env:
       ANT_OPTS: -Xmx6g
@@ -16,7 +16,7 @@ jobs:
     steps:
     - name: Perform Checkout
       uses: actions/checkout@v2
-    - name: Install Ant-Contrib and Python
+    - name: Install Python things
       run: |
         pip install -r requirements.txt
     - name: Fetch data and build index
